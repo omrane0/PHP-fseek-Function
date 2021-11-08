@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$file = fopen("test.txt","r");
+
+// Print current position
+echo ftell($file);
+
+// Change current position
+fseek($file,"15");
+
+// Print current position again
+echo "<br>" . ftell($file);
+
+fclose($file);
+?>
+
+</body>
+</html>
+
+
+
+
+
+
+0
+15
